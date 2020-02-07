@@ -1,0 +1,77 @@
+body{
+    background-color:#ffd1f7;
+    background-image:url(https://gifimage.net/wp-content/uploads/2018/11/gif-background-anime-4.gif);
+    color:#fff;
+    font-family:sans-serif,verdana;
+    cursor:url(https://www.dropbox.com/s/cf7vouj678yvwpe/custcursor.cur?raw=1),auto
+}
+.title{
+    float:left;
+    width:33.33%;
+}
+
+.spotify{
+    margin:auto;
+    width:50%;
+    bottom:0;
+}
+
+.cat{
+    transform: rotate(90deg);
+    position:absolute;
+    bottom:0;
+}
+
+.heart{
+    position:absolute;
+    left:70%;
+    top:0;
+}
+
+.mobiletxt{
+    font-size:70px !important;
+}
+
+.marq{
+    font-family: 'Pacifico', cursive;
+    color:purple;
+    font-size:50px;
+    padding:30px;
+}
+.marq p
+{
+ position: absolute;
+ width: 100%;
+ margin: 100s%
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: scroll-left 10s linear infinite;
+ -webkit-animation: scroll-left 10s linear infinite;
+ animation: scroll-left 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
